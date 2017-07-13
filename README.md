@@ -20,6 +20,7 @@ Contributions are encouraged. The only rule is to keep order of rules as they're
 # Useful related resources
 
 * Official ESLint docs with rules: http://eslint.org/docs/rules/
+* ESLint recommended rules: https://github.com/eslint/eslint/blob/master/conf/eslint-recommended.js
 * AirBnB Style Guide: https://github.com/airbnb/javascript
 * StandardJS: https://standardjs.com/
 * Original ESLint Reset gist: https://gist.github.com/cletusw/e01a85e399ab563b1236
