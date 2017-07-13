@@ -7,7 +7,7 @@ Inspired by the [original gist](https://gist.github.com/cletusw/e01a85e399ab563b
 
 # Contributing
 
-Contributions are encouraged. The only rule is to keep order of rules as theyre authored in [official docs](http://eslint.org/docs/rules/)
+Contributions are encouraged. The only rule is to keep order of rules as they're authored in [official docs](http://eslint.org/docs/rules/).
 
 
 # TODO
