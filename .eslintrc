@@ -1,9 +1,7 @@
 {
 
-  // Repo: https://github.com/DominikSerafin/eslint-starter
-  // Original gist: https://gist.github.com/cletusw/e01a85e399ab563b1236
+  // Created from ESLint Starter: https://github.com/DominikSerafin/eslint-starter
   // ESLint Docs: http://eslint.org/docs/rules/
-  //
 
   "ecmaFeatures": {
     "arrowFunctions": false,                     // enable arrow functions
