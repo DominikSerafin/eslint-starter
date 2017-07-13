@@ -2,7 +2,7 @@
 
 ESLint config starter that contains every rule which is disabled on start and commented with description. Create your own config by enabling only the rules you need. 
 
-Inspired by the [original gist](https://gist.github.com/cletusw/e01a85e399ab563b1236) by [cletusw](https://gist.github.com/cletusw). Unfortunately at the time of writing it wasn't updated with all the new, deprecated & removed rules. This repo was created with intent to fix that.
+Inspired by the original [ESLint Reset gist](https://gist.github.com/cletusw/e01a85e399ab563b1236) by [cletusw](https://gist.github.com/cletusw). Unfortunately at the time of writing it wasn't updated with all the new, deprecated & removed rules. This repo was created with intent to fix that.
 
 
 # Contributing
