@@ -1,7 +1,11 @@
 {
 
-  // Repo: https://github.com/DominikSerafin/eslint-starter
-  // Original gist: https://gist.github.com/cletusw/e01a85e399ab563b1236
+  // ESLint Reset - A starter .eslintrc file that resets all rules to off and includes a description of what each rule does.
+  // From here, enable the rules that you care about by changing the 0 to a 1 or 2. 1 means warning (will not affect exit code) and 2 means error (will affect exit code).
+  // This fork updates all the deprecated rules and outdated stuff…
+  //
+  // Original: https://gist.github.com/cletusw/e01a85e399ab563b1236
+  // Fork: https://gist.github.com/DominikSerafin/605d0b1abb45f57c22e24b7be52ed80a
   // ESLint Docs: http://eslint.org/docs/rules/
   //
 
@@ -97,7 +101,7 @@
     "accessor-pairs": 0,        // enforces getter/setter pairs in objects (off by default)
     "array-callback-return": 0, // enforce return statements in callbacks of array methods
     "block-scoped-var": 0,      // treat var statements as if they were block scoped (off by default)
-    "class-methods-use-this": 0 // enforce that class methods utilize this
+    "class-methods-use-this": 0, // enforce that class methods utilize this
     "complexity": 0,            // specify the maximum cyclomatic complexity allowed in a program (off by default)
     "consistent-return": 0,     // require return statements to either always or never specify values
     "curly": 0,                 // specify curly brace conventions for all control statements
@@ -236,7 +240,7 @@
     "no-multiple-empty-lines": 0,     // disallow multiple empty lines (off by default)
     "no-nested-ternary": 0,           // disallow nested ternary expressions (off by default)
     "no-new-object": 0,               // disallow use of the Object constructor
-    "no-plusplus": 0                  // disallow use of unary operators, ++ and -- (off by default)
+    "no-plusplus": 0,                 // disallow use of unary operators, ++ and -- (off by default)
     "no-ternary": 0,                  // disallow the use of ternary operators (off by default)
     "no-trailing-spaces": 0,          // disallow trailing whitespace at the end of lines
     "no-underscore-dangle": 0,        // disallow dangling underscores in identifiers
@@ -244,7 +248,6 @@
     "operator-assignment": 0,         // require assignment operator shorthand where possible or prohibit it entirely (off by default)
     "operator-linebreak": 0,          // enforce operators to be placed before or after line breaks (off by default)
     "padding-line-between-statements": 0, // require or disallow padding lines between statements
-    "quote-props": 0,              // require quotes around object literal property names
     "padded-blocks": 0,               // enforce padding within blocks (off by default)
     "quote-props": 0,                 // require quotes around object literal property names (off by default)
     "quotes": 0,                      // specify whether double or single quotes should be used
