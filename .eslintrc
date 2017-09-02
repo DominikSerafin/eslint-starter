@@ -173,18 +173,23 @@
 
     ////////// Stylistic Issues //////////
 
-    "array-bracket-spacing": 0,           // enforce spacing inside array brackets
+    "array-bracket-newline": 0,           // enforce linebreaks after opening and before closing array brackets
+    "array-bracket-spacing": 0,           // enforce consistent spacing inside array brackets
+    "array-element-newline": 0,           // enforce line breaks after each array element
+    "block-spacing": 0,                   // enforce consistent spacing inside single-line blocks
     "brace-style": 0,                     // enforce one true brace style
-    "camelcase": 0,                       // require camel case names
+    "camelcase": 0,                       // enforce camelcase naming convention
+    "capitalized-comments": 0,            // enforce or disallow capitalization of the first letter of a comment
     "comma-dangle": 0,                    // require or disallow trailing commas
     "comma-spacing": 0,                   // enforce spacing before and after comma
     "comma-style": 0,                     // enforce one true comma style
     "computed-property-spacing": 0,       // require or disallow padding inside computed properties
     "consistent-this": 0,                 // enforces consistent naming when capturing the current execution context
     "eol-last": 0,                        // enforce newline at the end of file, with no multiple empty lines
+    "func-call-spacing": 0,               // require or disallow spacing between function identifiers and their invocations
+    "func-name-matching": 0,              // function names to match the variable name or property to which they are assigned
     "func-names": 0,                      // require function expressions to have a name
     "func-style": 0,                      // enforces use of function declarations or expressions
-    "func-call-spacing": 0,               // require or disallow spacing between function identifiers and their invocations
     "indent": 0,                          // this option sets a specific tab width for your code
     "key-spacing": 0,                     // enforces spacing between keys and values in object literal properties
     "lines-around-comment": 0,            // enforces empty lines around comments
