@@ -2,8 +2,6 @@
 // ESLint Docs: http://eslint.org/docs/rules/
 
 {
-
-//
 //  // https://eslint.org/docs/user-guide/configuring#specifying-parser
 //  "parser": "esprima",
 //  
@@ -57,7 +55,6 @@
 //  "plugins": [
 //    // e.g. "react" (must run `npm install eslint-plugin-react` first)
 //  ],
-//
 
   // https://eslint.org/docs/user-guide/configuring#configuring-rules
   // https://eslint.org/docs/rules/
@@ -172,7 +169,6 @@
     "vars-on-top": 0,                     // require var declarations be placed at the top of their containing scope
     "wrap-iife": 0,                       // require parentheses around immediate function invocations
     "yoda": 0,                            // require or disallow “Yoda” conditions
-
 
     ////////// Strict Mode //////////
 
