@@ -3,22 +3,27 @@
 
 {
   
-  https://eslint.org/docs/user-guide/configuring#specifying-parser
-  // "parser": "esprima",
+  // https://eslint.org/docs/user-guide/configuring#specifying-parser
+  /*
+  "parser": "esprima",
+  */
   
   // https://eslint.org/docs/user-guide/configuring#specifying-parser-options
-  //"parserOptions": {
-  //  "ecmaVersion": 6,
-  //  "sourceType": "script",
-  //  "ecmaFeatures": {
-  //    "globalReturn": false,
-  //    "impliedStrict": false,
-  //    "jsx": false,
-  //    "experimentalObjectRestSpread": false,
-  //  }
-  //},
+  /*
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "script",
+    "ecmaFeatures": {
+      "globalReturn": false,
+      "impliedStrict": false,
+      "jsx": false,
+      "experimentalObjectRestSpread": false,
+    }
+  },
+  */
 
   // https://eslint.org/docs/user-guide/configuring#specifying-environments
+  /*
   "env": {
     "browser": false,                     // browser global variables
     "node": false,                        // Node.js global variables and Node.js scoping
@@ -46,16 +51,21 @@
     "webextensions": false,               // WebExtensions globals
     "greasemonkey": false,                // GreaseMonkey globals
   },
+  */
 
   // https://eslint.org/docs/user-guide/configuring#specifying-globals
+  /*
   "globals": {
     // e.g. "Vue": true
   },
+  */
 
   // https://eslint.org/docs/user-guide/configuring#configuring-plugins
+  /*
   "plugins": [
     // e.g. "react" (must run `npm install eslint-plugin-react` first)
   ],
+  */
   
   // https://eslint.org/docs/user-guide/configuring#configuring-rules
   // https://eslint.org/docs/rules/
