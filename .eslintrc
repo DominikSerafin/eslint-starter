@@ -65,74 +65,76 @@
 
     ////////// Best Practices //////////
 
-    "accessor-pairs": 0,               // enforces getter/setter pairs in objects
-    "array-callback-return": 0,        // enforce return statements in callbacks of array methods
-    "block-scoped-var": 0,             // treat var statements as if they were block scoped
-    "class-methods-use-this": 0,       // enforce that class methods utilize this
-    "complexity": 0,                   // specify the maximum cyclomatic complexity allowed in a program
-    "consistent-return": 0,            // require return statements to either always or never specify values
-    "curly": 0,                        // specify curly brace conventions for all control statements
-    "default-case": 0,                 // require default case in switch statements
-    "dot-location": 0,                 // enforces consistent newlines before or after dots
-    "dot-notation": 0,                 // encourages use of dot notation whenever possible
-    "eqeqeq": 0,                       // require the use of === and !==
-    "guard-for-in": 0,                 // make sure for-in loops have an if statement
-    "no-alert": 0,                     // disallow the use of alert, confirm, and prompt
-    "no-caller": 0,                    // disallow use of arguments.caller or arguments.callee
-    "no-div-regex": 0,                 // disallow division operators explicitly at beginning of regular expression
-    "no-else-return": 0,               // disallow else after a return in an if
-    "no-empty-function": 0,            // disallow empty functions
-    "no-empty-pattern": 0,             // disallow empty destructuring patterns
-    "no-eq-null": 0,                   // disallow comparisons to null without a type-checking operator
-    "no-eval": 0,                      // disallow use of eval()
-    "no-extend-native": 0,             // disallow adding to native types
-    "no-extra-bind": 0,                // disallow unnecessary function binding
-    "no-extra-label": 0,               // disallow unnecessary labels
-    "no-fallthrough": 0,               // disallow fallthrough of case statements
-    "no-floating-decimal": 0,          // disallow the use of leading or trailing decimal points in numeric literals
-    "no-global-assign": 0,             // disallow assignment to native objects or read-only global variables
-    "no-implicit-coercion": 0,         // disallow shorthand type conversions
-    "no-implicit-globals": 0,          // disallow variable and function declarations in the global scope
-    "no-implied-eval": 0,              // disallow use of eval()-like methods
-    "no-iterator": 0,                  // disallow usage of __iterator__ property
-    "no-labels": 0,                    // disallow labeled statements
-    "no-lone-blocks": 0,               // disallow unnecessary nested blocks
-    "no-loop-func": 0,                 // disallow creation of functions within loops
-    "no-magic-numbers": 0,             // disallow magic numbers
-    "no-multi-spaces": 0,              // disallow use of multiple spaces
-    "no-multi-str": 0,                 // disallow use of multiline strings
-    "no-new": 0,                       // disallow use of new operator when not part of the assignment or comparison
-    "no-new-func": 0,                  // disallow use of new operator for Function object
-    "no-new-wrappers": 0,              // disallows creating new instances of String, Number, and Boolean
-    "no-octal": 0,                     // disallow use of octal literals
-    "no-octal-escape": 0,              // disallow use of octal escape sequences in string literals, such as var foo = "Copyright \251";
-    "no-param-reassign": 0,            // disallow reassignment of function parameters
-    "no-proto": 0,                     // disallow usage of __proto__ property
-    "no-redeclare": 0,                 // disallow declaring the same variable more than once
-    "no-restricted-properties": 0,     // disallow certain properties on certain objects
-    "no-return-assign": 0,             // disallow use of assignment in return statement
-    "no-return-await": 0,              // disallow unnecessary return await
-    "no-script-url": 0,                // disallow use of javascript: urls
-    "no-self-assign": 0,               // disallow assignments where both sides are exactly the same
-    "no-self-compare": 0,              // disallow comparisons where both sides are exactly the same
-    "no-sequences": 0,                 // disallow use of comma operator
-    "no-throw-literal": 0,             // restrict what can be thrown as an exception
-    "no-unmodified-loop-condition": 0, // disallow unmodified loop conditions
-    "no-unused-expressions": 0,        // disallow usage of expressions in statement position
-    "no-unused-labels": 0,             // disallow unused labels
-    "no-useless-call": 0,              // disallow unnecessary calls to .call() and .apply()
-    "no-useless-concat": 0,            // disallow unnecessary concatenation of literals or template literals
-    "no-useless-escape": 0,            // disallow unnecessary escape characters
-    "no-useless-return": 0,            // disallow redundant return statements
-    "no-void": 0,                      // disallow use of void operator
-    "no-warning-comments": 0,          // disallow usage of configurable warning terms in comments, e.g. TODO or FIXME
-    "no-with": 0,                      // disallow use of the with statement
-    "prefer-promise-reject-errors": 0, // require using Error objects as Promise rejection reasons
-    "radix": 0,                        // require use of the second argument for parseInt()
-    "require-await": 0,                // disallow async functions which have no await expression
-    "vars-on-top": 0,                  // requires to declare all vars on top of their containing scope
-    "wrap-iife": 0,                    // require immediate function invocation to be wrapped in parentheses
-    "yoda": 0,                         // require or disallow Yoda conditions
+    "accessor-pairs": 0,                  // enforce getter and setter pairs in objects
+    "array-callback-return": 0,           // enforce return statements in callbacks of array methods
+    "block-scoped-var": 0,                // enforce the use of variables within the scope they are defined
+    "class-methods-use-this": 0,          // enforce that class methods utilize this
+    "complexity": 0,                      // enforce a maximum cyclomatic complexity allowed in a program
+    "consistent-return": 0,               // require return statements to either always or never specify values
+    "curly": 0,                           // enforce consistent brace style for all control statements
+    "default-case": 0,                    // require default cases in switch statements
+    "dot-location": 0,                    // enforce consistent newlines before and after dots
+    "dot-notation": 0,                    // enforce dot notation whenever possible
+    "eqeqeq": 0,                          // require the use of === and !==
+    "guard-for-in": 0,                    // require for-in loops to include an if statement
+    "no-alert": 0,                        // disallow the use of alert, confirm, and prompt
+    "no-caller": 0,                       // disallow the use of arguments.caller or arguments.callee
+    "no-case-declarations": 0,            // disallow lexical declarations in case clauses
+    "no-div-regex": 0,                    // disallow division operators explicitly at the beginning of regular expressions
+    "no-else-return": 0,                  // disallow else blocks after return statements in if statements
+    "no-empty-function": 0,               // disallow empty functions
+    "no-empty-pattern": 0,                // disallow empty destructuring patterns
+    "no-eq-null": 0,                      // disallow null comparisons without type-checking operators
+    "no-eval": 0,                         // disallow the use of eval()
+    "no-extend-native": 0,                // disallow extending native types
+    "no-extra-bind": 0,                   // disallow unnecessary calls to .bind()
+    "no-extra-label": 0,                  // disallow unnecessary labels
+    "no-fallthrough": 0,                  // disallow fallthrough of case statements
+    "no-floating-decimal": 0,             // disallow leading or trailing decimal points in numeric literals
+    "no-global-assign": 0,                // disallow assignments to native objects or read-only global variables
+    "no-implicit-coercion": 0,            // disallow shorthand type conversions
+    "no-implicit-globals": 0,             // disallow variable and function declarations in the global scope
+    "no-implied-eval": 0,                 // disallow the use of eval()-like methods
+    "no-invalid-this": 0,                 // disallow this keywords outside of classes or class-like objects
+    "no-iterator": 0,                     // disallow the use of the __iterator__ property
+    "no-labels": 0,                       // disallow labeled statements
+    "no-lone-blocks": 0,                  // disallow unnecessary nested blocks
+    "no-loop-func": 0,                    // disallow function declarations and expressions inside loop statements
+    "no-magic-numbers": 0,                // disallow magic numbers
+    "no-multi-spaces": 0,                 // disallow multiple spaces
+    "no-multi-str": 0,                    // disallow multiline strings
+    "no-new": 0,                          // disallow new operators outside of assignments or comparisons
+    "no-new-func": 0,                     // disallow new operators with the Function object
+    "no-new-wrappers": 0,                 // disallow new operators with the String, Number, and Boolean objects
+    "no-octal": 0,                        // disallow octal literals
+    "no-octal-escape": 0,                 // disallow octal escape sequences in string literals
+    "no-param-reassign": 0,               // disallow reassigning function parameters
+    "no-proto": 0,                        // disallow the use of the __proto__ property
+    "no-redeclare": 0,                    // disallow variable redeclaration
+    "no-restricted-properties": 0,        // disallow certain properties on certain objects
+    "no-return-assign": 0,                // disallow assignment operators in return statements
+    "no-return-await": 0,                 // disallow unnecessary return await
+    "no-script-url": 0,                   // disallow javascript: urls
+    "no-self-assign": 0,                  // disallow assignments where both sides are exactly the same
+    "no-self-compare": 0,                 // disallow comparisons where both sides are exactly the same
+    "no-sequences": 0,                    // disallow comma operators
+    "no-throw-literal": 0,                // disallow throwing literals as exceptions
+    "no-unmodified-loop-condition": 0,    // disallow unmodified loop conditions
+    "no-unused-expressions": 0,           // disallow unused expressions
+    "no-unused-labels": 0,                // disallow unused labels
+    "no-useless-call": 0,                 // disallow unnecessary calls to .call() and .apply()
+    "no-useless-concat": 0,               // disallow unnecessary concatenation of literals or template literals
+    "no-useless-escape": 0,               // disallow unnecessary escape characters
+    "no-useless-return": 0,               // disallow redundant return statements
+    "no-void": 0,                         // disallow void operators
+    "no-warning-comments": 0,             // disallow specified warning terms in comments
+    "no-with": 0,                         // disallow with statements
+    "prefer-promise-reject-errors": 0,    // require using Error objects as Promise rejection reasons
+    "radix": 0,                           // enforce the consistent use of the radix argument when using parseInt()
+    "require-await": 0,                   // disallow async functions which have no await expression
+    "vars-on-top": 0,                     // require var declarations be placed at the top of their containing scope
+    "wrap-iife": 0,                       // require parentheses around immediate function invocations
+    "yoda": 0,                            // require or disallow “Yoda” conditions
 
 
     ////////// Strict Mode //////////
