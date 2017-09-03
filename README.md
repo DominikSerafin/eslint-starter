@@ -4,16 +4,13 @@ ESLint config starter that contains every rule which is disabled on start and co
 
 Inspired by the original [ESLint Reset gist](https://gist.github.com/cletusw/e01a85e399ab563b1236) by [cletusw](https://gist.github.com/cletusw). Unfortunately at the time of writing it wasn't updated with all the new, deprecated & removed rules. This repo was created with intent to fix that.
 
-
 # Contributing
 
-Contributions are encouraged. The only rule is to keep order of rules as they're authored in [official docs](http://eslint.org/docs/rules/).
+Contributions are encouraged.
 
-
-# To Do (Pull Requests Welcome)
+## To Do
 
 * Update extractor.js to generate whole config instead only specific sections.
-
 
 # Useful related resources
 
