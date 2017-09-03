@@ -25,6 +25,7 @@
 
   "rules": {
 
+
     ////////// Possible Errors //////////
 
     "for-direction": 0,                   // enforce “for” loop update clause moving the counter in the right direction.
@@ -264,17 +265,39 @@
     "wrap-regex": 0,                       // require parenthesis around regex literals
 
 
-
-
-
     ////////// ECMAScript 6 //////////
 
-    "constructor-super": 0,         // verify super() callings in constructors
-    "generator-star-spacing": 0,    // enforce the spacing around the * in generator functions
-    "no-this-before-super": 0,      // disallow to use this/super before super() calling in constructors
-    "no-var": 0,                    // require let or const instead of var
-    "object-shorthand": 0,          // require method and property shorthand syntax for object literals
-    "prefer-const": 0,              // suggest using of const declaration for variables that are never modified after declared
+    "arrow-body-style": 0,                // require braces around arrow function bodies
+    "arrow-parens": 0,                    // require parentheses around arrow function arguments
+    "arrow-spacing": 0,                   // enforce consistent spacing before and after the arrow in arrow functions
+    "constructor-super": 0,               // require super() calls in constructors
+    "generator-star-spacing": 0,          // enforce consistent spacing around * operators in generator functions
+    "no-class-assign": 0,                 // disallow reassigning class members
+    "no-confusing-arrow": 0,              // disallow arrow functions where they could be confused with comparisons
+    "no-const-assign": 0,                 // disallow reassigning const variables
+    "no-dupe-class-members": 0,           // disallow duplicate class members
+    "no-duplicate-imports": 0,            // disallow duplicate module imports
+    "no-new-symbol": 0,                   // disallow new operators with the Symbol object
+    "no-restricted-imports": 0,           // disallow specified modules when loaded by import
+    "no-this-before-super": 0,            // disallow this/super before calling super() in constructors
+    "no-useless-computed-key": 0,         // disallow unnecessary computed property keys in object literals
+    "no-useless-constructor": 0,          // disallow unnecessary constructors
+    "no-useless-rename": 0,               // disallow renaming import, export, and destructured assignments to the same name
+    "no-var": 0,                          // require let or const instead of var
+    "object-shorthand": 0,                // require or disallow method and property shorthand syntax for object literals
+    "prefer-arrow-callback": 0,           // require using arrow functions for callbacks
+    "prefer-const": 0,                    // require const declarations for variables that are never reassigned after declared
+    "prefer-destructuring": 0,            // require destructuring from arrays and/or objects
+    "prefer-numeric-literals": 0,         // disallow parseInt() and Number.parseInt() in favor of binary, octal, and hexadecimal literals
+    "prefer-rest-params": 0,              // require rest parameters instead of arguments
+    "prefer-spread": 0,                   // require spread operators instead of .apply()
+    "prefer-template": 0,                 // require template literals instead of string concatenation
+    "require-yield": 0,                   // require generator functions to contain yield
+    "rest-spread-spacing": 0,             // enforce spacing between rest and spread operators and their expressions
+    "sort-imports": 0,                    // enforce sorted import declarations within modules
+    "symbol-description": 0,              // require symbol descriptions
+    "template-curly-spacing": 0,          // require or disallow spacing around embedded expressions of template strings
+    "yield-star-spacing": 0,              // require or disallow spacing around the * in yield* expressions
 
 
   }
