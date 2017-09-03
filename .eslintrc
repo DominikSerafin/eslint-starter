@@ -1,30 +1,65 @@
+// Created from ESLint Starter: https://github.com/DominikSerafin/eslint-starter
+// ESLint Docs: http://eslint.org/docs/rules/
+
 {
+  
+  https://eslint.org/docs/user-guide/configuring#specifying-parser
+  // "parser": "esprima",
+  
+  // https://eslint.org/docs/user-guide/configuring#specifying-parser-options
+  //"parserOptions": {
+  //  "ecmaVersion": 6,
+  //  "sourceType": "script",
+  //  "ecmaFeatures": {
+  //    "globalReturn": false,
+  //    "impliedStrict": false,
+  //    "jsx": false,
+  //    "experimentalObjectRestSpread": false,
+  //  }
+  //},
 
-  // Created from ESLint Starter: https://github.com/DominikSerafin/eslint-starter
-  // ESLint Docs: http://eslint.org/docs/rules/
-
+  // https://eslint.org/docs/user-guide/configuring#specifying-environments
   "env": {
-    "browser": false,                            // browser global variables
-    "node": false,                               // Node.js global variables and Node.js-specific rules
-    "amd": false,                                // defines require() and define() as global variables as per the amd spec
-    "mocha": false,                              // adds all of the Mocha testing global variables
-    "jasmine": false,                            // adds all of the Jasmine testing global variables for version 1.3 and 2.0
-    "phantomjs": false,                          // phantomjs global variables
-    "jquery": false,                             // jquery global variables
-    "prototypejs": false,                        // prototypejs global variables
-    "shelljs": false,                            // shelljs global variables
+    "browser": false,                     // browser global variables
+    "node": false,                        // Node.js global variables and Node.js scoping
+    "commonjs": false,                    // CommonJS global variables and CommonJS scoping (use this for browser-only code that uses Browserify/WebPack)
+    "shared-node-browser": false,         // Globals common to both Node and Browser
+    "es6": false,                         // enable all ECMAScript 6 features except for modules (this automatically sets the ecmaVersion parser option to 6)
+    "worker": false,                      // web workers global variables
+    "amd": false,                         // defines require() and define() as global variables as per the amd spec
+    "mocha": false,                       // adds all of the Mocha testing global variables
+    "jasmine": false,                     // adds all of the Jasmine testing global variables for version 1.3 and 2.0
+    "jest": false,                        // Jest global variables
+    "phantomjs": false,                   // PhantomJS global variables
+    "protractor": false,                  // Protractor global variables
+    "qunit": false,                       // QUnit globals
+    "jquery": false,                      // jQuery globals
+    "prototypejs": false,                 // Prototype.js global variables
+    "shelljs": false,                     // ShellJS globals
+    "meteor": false,                      // Meteor globals
+    "mongo": false,                       // MongoDB globals
+    "applescript": false,                 // AppleScript global variables
+    "nashorn": false,                     // Java 8 Nashorn global variables
+    "serviceworker": false,               // Service Worker global variables
+    "atomtest": false,                    // Atom test globals
+    "embertest": false,                   // Ember test globals
+    "webextensions": false,               // WebExtensions globals
+    "greasemonkey": false,                // GreaseMonkey globals
   },
 
+  // https://eslint.org/docs/user-guide/configuring#specifying-globals
   "globals": {
-    // e.g. "angular": true
+    // e.g. "Vue": true
   },
 
+  // https://eslint.org/docs/user-guide/configuring#configuring-plugins
   "plugins": [
     // e.g. "react" (must run `npm install eslint-plugin-react` first)
   ],
-
+  
+  // https://eslint.org/docs/user-guide/configuring#configuring-rules
+  // https://eslint.org/docs/rules/
   "rules": {
-
 
     ////////// Possible Errors //////////
 
@@ -62,7 +97,6 @@
     "use-isnan": 0,                       // require calls to isNaN() when checking for NaN
     "valid-jsdoc": 0,                     // enforce valid JSDoc comments
     "valid-typeof": 0,                    // enforce comparing typeof expressions against valid strings
-
 
     ////////// Best Practices //////////
 
@@ -142,7 +176,6 @@
 
     "strict": 0,                          // require or disallow strict mode directives
 
-
     ////////// Variables //////////
 
     "init-declarations": 0,               // require or disallow initialization in variable declarations
@@ -158,7 +191,6 @@
     "no-unused-vars": 0,                  // disallow unused variables
     "no-use-before-define": 0,            // disallow the use of variables before they are defined
 
-
     ////////// Node.js and CommonJS //////////
 
     "callback-return": 0,                 // require return statements after callbacks
@@ -172,7 +204,6 @@
     "no-process-exit": 0,                 // disallow the use of process.exit()
     "no-restricted-modules": 0,           // disallow specified modules when loaded by require
     "no-sync": 0,                         // disallow synchronous methods
-
 
     ////////// Stylistic Issues //////////
 
@@ -264,7 +295,6 @@
     "unicode-bom": 0,                      // require or disallow Unicode byte order mark (BOM)
     "wrap-regex": 0,                       // require parenthesis around regex literals
 
-
     ////////// ECMAScript 6 //////////
 
     "arrow-body-style": 0,                // require braces around arrow function bodies
@@ -299,6 +329,6 @@
     "template-curly-spacing": 0,          // require or disallow spacing around embedded expressions of template strings
     "yield-star-spacing": 0,              // require or disallow spacing around the * in yield* expressions
 
-
   }
+  
 }
