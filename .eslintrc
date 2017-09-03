@@ -160,17 +160,17 @@
 
     ////////// Node.js and CommonJS //////////
 
-    "callback-return": 0,              // require return statements after callbacks
-    "global-require": 0,               // require require() calls to be placed at top-level module scope
-    "handle-callback-err": 0,          // enforces error handling in callbacks
-    "no-buffer-constructor": 0,        // disallow use of the Buffer() constructor
-    "no-mixed-requires": 0,            // disallow require calls to be mixed with regular variable declarations
-    "no-new-require": 0,               // disallow new operators with calls to require
-    "no-path-concat": 0,               // disallow string concatenation with __dirname and __filename
-    "no-process-env": 0,               // disallow use of process.env
-    "no-process-exit": 0,              // disallow process.exit()
-    "no-restricted-modules": 0,        // restrict usage of specified node modules
-    "no-sync": 0,                      // disallow use of synchronous methods
+    "callback-return": 0,                 // require return statements after callbacks
+    "global-require": 0,                  // require require() calls to be placed at top-level module scope
+    "handle-callback-err": 0,             // require error handling in callbacks
+    "no-buffer-constructor": 0,           // disallow use of the Buffer() constructor
+    "no-mixed-requires": 0,               // disallow require calls to be mixed with regular variable declarations
+    "no-new-require": 0,                  // disallow new operators with calls to require
+    "no-path-concat": 0,                  // disallow string concatenation with __dirname and __filename
+    "no-process-env": 0,                  // disallow the use of process.env
+    "no-process-exit": 0,                 // disallow the use of process.exit()
+    "no-restricted-modules": 0,           // disallow specified modules when loaded by require
+    "no-sync": 0,                         // disallow synchronous methods
 
 
     ////////// Stylistic Issues //////////
