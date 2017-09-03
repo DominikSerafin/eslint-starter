@@ -10,7 +10,7 @@ Inspired by the original [ESLint Reset gist](https://gist.github.com/cletusw/e01
 Contributions are encouraged. The only rule is to keep order of rules as they're authored in [official docs](http://eslint.org/docs/rules/).
 
 
-# TODO
+# To Do (Pull Requests Welcome)
 
 * Update extractor.js to generate whole config instead only specific sections.
 
