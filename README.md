@@ -12,9 +12,7 @@ Contributions are encouraged. The only rule is to keep order of rules as they're
 
 # TODO
 
-* Update "Stylistic Issues".
-* Update "ECMAScript 6".
-* Update descriptions (sync them with official docs).
+* Update extractor.js to generate whole config instead only specific sections.
 
 
 # Useful related resources
