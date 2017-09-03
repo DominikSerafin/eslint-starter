@@ -173,67 +173,99 @@
 
     ////////// Stylistic Issues //////////
 
-    "array-bracket-newline": 0,           // enforce linebreaks after opening and before closing array brackets
-    "array-bracket-spacing": 0,           // enforce consistent spacing inside array brackets
-    "array-element-newline": 0,           // enforce line breaks after each array element
-    "block-spacing": 0,                   // enforce consistent spacing inside single-line blocks
-    "brace-style": 0,                     // enforce one true brace style
-    "camelcase": 0,                       // enforce camelcase naming convention
-    "capitalized-comments": 0,            // enforce or disallow capitalization of the first letter of a comment
-    "comma-dangle": 0,                    // require or disallow trailing commas
-    "comma-spacing": 0,                   // enforce spacing before and after comma
-    "comma-style": 0,                     // enforce one true comma style
-    "computed-property-spacing": 0,       // require or disallow padding inside computed properties
-    "consistent-this": 0,                 // enforces consistent naming when capturing the current execution context
-    "eol-last": 0,                        // enforce newline at the end of file, with no multiple empty lines
-    "func-call-spacing": 0,               // require or disallow spacing between function identifiers and their invocations
-    "func-name-matching": 0,              // function names to match the variable name or property to which they are assigned
-    "func-names": 0,                      // require function expressions to have a name
-    "func-style": 0,                      // enforces use of function declarations or expressions
-    "indent": 0,                          // this option sets a specific tab width for your code
-    "key-spacing": 0,                     // enforces spacing between keys and values in object literal properties
-    "lines-around-comment": 0,            // enforces empty lines around comments
-    "max-depth": 0,                       // specify the maximum depth that blocks can be nested
-    "max-len": 0,                         // specify the maximum length of a line in your program
-    "max-lines": 0,                       // enforce a maximum number of lines per file
-    "max-statements": 0,                  // specify the maximum number of statement allowed in a function
-    "max-statements-per-line": 0,         // enforce a maximum number of statements allowed per line
-    "max-nested-callbacks": 0,            // specify the maximum depth callbacks can be nested
-    "max-params": 0,                      // limits the number of parameters that can be used in the function declaration.
-    "linebreak-style": 0,                 // disallow mixed 'LF' and 'CRLF' as linebreaks
-    "new-cap": 0,                         // require a capital letter for constructors
-    "new-parens": 0,                      // disallow the omission of parentheses when invoking a constructor with no arguments
-    "no-array-constructor": 0,            // disallow use of the Array constructor
-    "no-bitwise": 0,                      // disallow use of bitwise operators
-    "no-continue": 0,                     // disallow use of the continue statement
-    "no-inline-comments": 0,              // disallow comments inline after code
-    "no-lonely-if": 0,                    // disallow if as the only statement in an else block
-    "no-mixed-spaces-and-tabs": 0,        // disallow mixed spaces and tabs for indentation
-    "no-multiple-empty-lines": 0,         // disallow multiple empty lines
-    "no-nested-ternary": 0,               // disallow nested ternary expressions
-    "no-new-object": 0,                   // disallow use of the Object constructor
-    "no-plusplus": 0,                     // disallow use of unary operators, ++ and --
-    "no-ternary": 0,                      // disallow the use of ternary operators
-    "no-trailing-spaces": 0,              // disallow trailing whitespace at the end of lines
-    "no-underscore-dangle": 0,            // disallow dangling underscores in identifiers
-    "one-var": 0,                         // allow just one var statement per function
-    "operator-assignment": 0,             // require assignment operator shorthand where possible or prohibit it entirely
-    "operator-linebreak": 0,              // enforce operators to be placed before or after line breaks
-    "padding-line-between-statements": 0, // require or disallow padding lines between statements
-    "padded-blocks": 0,                   // enforce padding within blocks
-    "quote-props": 0,                     // require quotes around object literal property names
-    "quotes": 0,                          // specify whether double or single quotes should be used
-    "semi-spacing": 0,                    // enforce spacing before and after semicolons
-    "semi": 0,                            // require or disallow use of semicolons instead of ASI
-    "sort-vars": 0,                       // sort variables within the same declaration block
-    "space-before-blocks": 0,             // require or disallow space before blocks
-    "space-before-function-paren": 0,     // require or disallow space before function opening parenthesis
-    "space-in-parens": 0,                 // require or disallow spaces inside parentheses
-    "space-infix-ops": 0,                 // require spaces around operators
-    "keyword-spacing": 0,                 // enforce consistent spacing before and after keywords
-    "space-unary-ops": 0,                 // require or disallow spaces before/after unary operators
-    "spaced-comment": 0,                  // require or disallow a space immediately following the // or /* in a comment
-    "wrap-regex": 0,                      // require regex literals to be wrapped in parentheses
+    "array-bracket-newline": 0,            // enforce linebreaks after opening and before closing array brackets
+    "array-bracket-spacing": 0,            // enforce consistent spacing inside array brackets
+    "array-element-newline": 0,            // enforce line breaks after each array element
+    "block-spacing": 0,                    // enforce consistent spacing inside single-line blocks
+    "brace-style": 0,                      // enforce consistent brace style for blocks
+    "camelcase": 0,                        // enforce camelcase naming convention
+    "capitalized-comments": 0,             // enforce or disallow capitalization of the first letter of a comment
+    "comma-dangle": 0,                     // require or disallow trailing commas
+    "comma-spacing": 0,                    // enforce consistent spacing before and after commas
+    "comma-style": 0,                      // enforce consistent comma style
+    "computed-property-spacing": 0,        // enforce consistent spacing inside computed property brackets
+    "consistent-this": 0,                  // enforce consistent naming when capturing the current execution context
+    "eol-last": 0,                         // require or disallow newline at the end of files
+    "func-call-spacing": 0,                // require or disallow spacing between function identifiers and their invocations
+    "func-name-matching": 0,               // require function names to match the name of the variable or property to which they are assigned
+    "func-names": 0,                       // require or disallow named function expressions
+    "func-style": 0,                       // enforce the consistent use of either function declarations or expressions
+    "function-paren-newline": 0,           // enforce consistent line breaks inside function parentheses
+    "id-blacklist": 0,                     // disallow specified identifiers
+    "id-length": 0,                        // enforce minimum and maximum identifier lengths
+    "id-match": 0,                         // require identifiers to match a specified regular expression
+    "indent": 0,                           // enforce consistent indentation
+    "jsx-quotes": 0,                       // enforce the consistent use of either double or single quotes in JSX attributes
+    "key-spacing": 0,                      // enforce consistent spacing between keys and values in object literal properties
+    "keyword-spacing": 0,                  // enforce consistent spacing before and after keywords
+    "line-comment-position": 0,            // enforce position of line comments
+    "linebreak-style": 0,                  // enforce consistent linebreak style
+    "lines-around-comment": 0,             // require empty lines around comments
+    "max-depth": 0,                        // enforce a maximum depth that blocks can be nested
+    "max-len": 0,                          // enforce a maximum line length
+    "max-lines": 0,                        // enforce a maximum number of lines per file
+    "max-nested-callbacks": 0,             // enforce a maximum depth that callbacks can be nested
+    "max-params": 0,                       // enforce a maximum number of parameters in function definitions
+    "max-statements": 0,                   // enforce a maximum number of statements allowed in function blocks
+    "max-statements-per-line": 0,          // enforce a maximum number of statements allowed per line
+    "multiline-ternary": 0,                // enforce newlines between operands of ternary expressions
+    "new-cap": 0,                          // require constructor names to begin with a capital letter
+    "new-parens": 0,                       // require parentheses when invoking a constructor with no arguments
+    "newline-per-chained-call": 0,         // require a newline after each call in a method chain
+    "no-array-constructor": 0,             // disallow Array constructors
+    "no-bitwise": 0,                       // disallow bitwise operators
+    "no-continue": 0,                      // disallow continue statements
+    "no-inline-comments": 0,               // disallow inline comments after code
+    "no-lonely-if": 0,                     // disallow if statements as the only statement in else blocks
+    "no-mixed-operators": 0,               // disallow mixed binary operators
+    "no-mixed-spaces-and-tabs": 0,         // disallow mixed spaces and tabs for indentation
+    "no-multi-assign": 0,                  // disallow use of chained assignment expressions
+    "no-multiple-empty-lines": 0,          // disallow multiple empty lines
+    "no-negated-condition": 0,             // disallow negated conditions
+    "no-nested-ternary": 0,                // disallow nested ternary expressions
+    "no-new-object": 0,                    // disallow Object constructors
+    "no-plusplus": 0,                      // disallow the unary operators ++ and --
+    "no-restricted-syntax": 0,             // disallow specified syntax
+    "no-tabs": 0,                          // disallow all tabs
+    "no-ternary": 0,                       // disallow ternary operators
+    "no-trailing-spaces": 0,               // disallow trailing whitespace at the end of lines
+    "no-underscore-dangle": 0,             // disallow dangling underscores in identifiers
+    "no-unneeded-ternary": 0,              // disallow ternary operators when simpler alternatives exist
+    "no-whitespace-before-property": 0,    // disallow whitespace before properties
+    "nonblock-statement-body-position": 0, // enforce the location of single-line statements
+    "object-curly-newline": 0,             // enforce consistent line breaks inside braces
+    "object-curly-spacing": 0,             // enforce consistent spacing inside braces
+    "object-property-newline": 0,          // enforce placing object properties on separate lines
+    "one-var": 0,                          // enforce variables to be declared either together or separately in functions
+    "one-var-declaration-per-line": 0,     // require or disallow newlines around variable declarations
+    "operator-assignment": 0,              // require or disallow assignment operator shorthand where possible
+    "operator-linebreak": 0,               // enforce consistent linebreak style for operators
+    "padded-blocks": 0,                    // require or disallow padding within blocks
+    "padding-line-between-statements": 0,  // require or disallow padding lines between statements
+    "quote-props": 0,                      // require quotes around object literal property names
+    "quotes": 0,                           // enforce the consistent use of either backticks, double, or single quotes
+    "require-jsdoc": 0,                    // require JSDoc comments
+    "semi": 0,                             // require or disallow semicolons instead of ASI
+    "semi-spacing": 0,                     // enforce consistent spacing before and after semicolons
+    "semi-style": 0,                       // enforce location of semicolons
+    "sort-keys": 0,                        // require object keys to be sorted
+    "sort-vars": 0,                        // require variables within the same declaration block to be sorted
+    "space-before-blocks": 0,              // enforce consistent spacing before blocks
+    "space-before-function-paren": 0,      // enforce consistent spacing before function definition opening parenthesis
+    "space-in-parens": 0,                  // enforce consistent spacing inside parentheses
+    "space-infix-ops": 0,                  // require spacing around infix operators
+    "space-unary-ops": 0,                  // enforce consistent spacing before or after unary operators
+    "spaced-comment": 0,                   // enforce consistent spacing after the // or /* in a comment
+    "switch-colon-spacing": 0,             // enforce spacing around colons of switch statements
+    "template-tag-spacing": 0,             // require or disallow spacing between template tags and their literals
+    "unicode-bom": 0,                      // require or disallow Unicode byte order mark (BOM)
+    "wrap-regex": 0,                       // require parenthesis around regex literals
+
+
+
+
+
+
 
 
     ////////// ECMAScript 6 //////////
