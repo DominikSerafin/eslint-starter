@@ -60,6 +60,8 @@
   // https://eslint.org/docs/rules/
   "rules": {
 
+
+
     ////////// Possible Errors //////////
 
     "for-direction": 0,                   // enforce “for” loop update clause moving the counter in the right direction.
@@ -97,6 +99,8 @@
     "valid-jsdoc": 0,                     // enforce valid JSDoc comments
     "valid-typeof": 0,                    // enforce comparing typeof expressions against valid strings
 
+
+
     ////////// Best Practices //////////
 
     "accessor-pairs": 0,                  // enforce getter and setter pairs in objects
@@ -111,6 +115,7 @@
     "dot-notation": 0,                    // enforce dot notation whenever possible
     "eqeqeq": 0,                          // require the use of === and !==
     "guard-for-in": 0,                    // require for-in loops to include an if statement
+    "max-classes-per-file": 0,            // enforce a maximum number of classes per file
     "no-alert": 0,                        // disallow the use of alert, confirm, and prompt
     "no-caller": 0,                       // disallow the use of arguments.caller or arguments.callee
     "no-case-declarations": 0,            // disallow lexical declarations in case clauses
@@ -170,14 +175,17 @@
     "wrap-iife": 0,                       // require parentheses around immediate function invocations
     "yoda": 0,                            // require or disallow “Yoda” conditions
 
+
+
     ////////// Strict Mode //////////
 
     "strict": 0,                          // require or disallow strict mode directives
 
+
+
     ////////// Variables //////////
 
     "init-declarations": 0,               // require or disallow initialization in variable declarations
-    "no-catch-shadow": 0,                 // disallow catch clause parameters from shadowing variables in the outer scope
     "no-delete-var": 0,                   // disallow deleting variables
     "no-label-var": 0,                    // disallow labels that share a name with a variable
     "no-restricted-globals": 0,           // disallow specified global variables
@@ -188,6 +196,8 @@
     "no-undefined": 0,                    // disallow the use of undefined as an identifier
     "no-unused-vars": 0,                  // disallow unused variables
     "no-use-before-define": 0,            // disallow the use of variables before they are defined
+
+
 
     ////////// Node.js and CommonJS //////////
 
@@ -202,6 +212,8 @@
     "no-process-exit": 0,                 // disallow the use of process.exit()
     "no-restricted-modules": 0,           // disallow specified modules when loaded by require
     "no-sync": 0,                         // disallow synchronous methods
+
+
 
     ////////// Stylistic Issues //////////
 
@@ -298,6 +310,8 @@
     "unicode-bom": 0,                     // require or disallow Unicode byte order mark (BOM)
     "wrap-regex": 0,                      // require parenthesis around regex literals
 
+
+
     ////////// ECMAScript 6 //////////
 
     "arrow-body-style": 0,                // require braces around arrow function bodies
@@ -331,6 +345,7 @@
     "symbol-description": 0,              // require symbol descriptions
     "template-curly-spacing": 0,          // require or disallow spacing around embedded expressions of template strings
     "yield-star-spacing": 0,              // require or disallow spacing around the * in yield* expressions
+
 
   }
   
