@@ -33,5 +33,45 @@ function scrapeRules(id){
 
 }
 
-var stylisticRules = scrapeRules('#stylistic-issues');
-console.log(stylisticRules.join('\r\n'));
+
+// extract...
+
+//console.log(stylisticRules.join('\r\n'));
+
+
+var sections = {
+  'Possible Errors': scrapeRules('#possible-errors'),
+  'Best Practices': scrapeRules('#best-practices'),
+  'Strict Mode': scrapeRules('#strict-mode'),
+  'Variables': scrapeRules('#variables'),
+  'Node.js and CommonJS': scrapeRules('#nodejs-and-commonjs'),
+  'Stylistic Issues': scrapeRules('#stylistic-issues'),
+  'ECMAScript 6': scrapeRules('#ecmascript-6'),
+  //'Deprecated': scrapeRules('#deprecated'),
+  //'Removed': scrapeRules('#removed'),
+}
+
+
+
+
+
+var rulesString = ``;
+
+for (var key of Object.keys(sections)) {
+  var val = sections[key];
+  console.log(key);
+
+var sectionString = `
+
+////////// ${key} //////////
+
+${val.join('\r\n')}
+
+`;
+
+  rulesString += sectionString;
+  
+}
+
+
+console.log(rulesString);
