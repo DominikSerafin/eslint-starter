@@ -1,3 +1,14 @@
+// include jquery
+(function(){
+  var script = document.createElement('script');
+  script.type = "text/javascript";
+  //script.async = true;
+  script.src = "https://code.jquery.com/jquery-3.3.1.slim.min.js";
+  document.getElementsByTagName('head')[0].appendChild(script);
+  jQuery.noConflict();
+})();
+  
+
 // extract rules from https://eslint.org/docs/rules/
 function scrapeRules(id){
 
